@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: boxMove 5s infinite;
+}
+@keyframes boxMove {
+    0% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+    30% {
+        background-color: blue;
+        transform: translate(0, 200px);
+    }
+    55% {
+        background-color: green;
+        transform: translate(200px, 200px);
+    }
+    80% {
+        background-color: yellow;
+        transform: translate(200px, 0);
+    }
+    100% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+}
